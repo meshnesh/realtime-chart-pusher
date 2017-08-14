@@ -1,0 +1,38 @@
+.title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.form {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+.form h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    color: #42b983;
+}

@@ -37,9 +37,10 @@
   import moment from 'moment'
   import Pusher from 'pusher-js'
   import LineChart from '@/components/LineChart'
+  import '../css/app.css'
 
-  const socket = new Pusher('APP_KEY', {
-    cluster: 'YOUR CLUSTER',
+  const socket = new Pusher('1543ad1914032b6f00bd', {
+    cluster: 'us2',
     encrypted: true
   })
   const channel = socket.subscribe('finance')
@@ -178,42 +179,3 @@
   }
 </script>
 
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-  .title {
-    text-align: center;
-    margin-top: 40px;
-  }
-  .subtitle {
-    text-align: center;
-  }
-  .form {
-    max-width: 600px;
-    width: 100%;
-    margin: 20px auto 0 auto;
-  }
-  .form h4 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>

@@ -5,10 +5,10 @@ const app = express();
 const Pusher = require('pusher');
 
 const pusher = new Pusher({
-    appId: '338977',
-    key: '3e6b0e8f2442b34330b7',
-    secret: 'bafd22e1acf4f096c8f2',
-    cluster: 'eu',
+    appId: '383048',
+    key: '1543ad1914032b6f00bd',
+    secret: '1d73e1c65969abf81f84',
+    cluster: 'us2',
     encrypted: true
 });
 
@@ -19,8 +19,7 @@ app.use(express.static(path.join(__dirname + '/app')));
 app.set('port', (process.env.PORT || 5000));
 
 let expensesList = {
-    data: [
-        {
+    data: [{
             date: "April 15th 2017",
             expense: 100,
             income: 4000
@@ -53,7 +52,7 @@ let expensesList = {
     ]
 }
 
-app.get('/finances', (req,res) => {
+app.get('/finances', (req, res) => {
     res.send(expensesList);
 });
 
@@ -62,7 +61,7 @@ app.post('/expense/add', (req, res) => {
     let income = Number(req.body.income)
     let date = req.body.date;
 
-    let newExpense  = {
+    let newExpense = {
         date: date,
         expense: expense,
         income: income
@@ -75,7 +74,7 @@ app.post('/expense/add', (req, res) => {
     });
 
     res.send({
-        success : true,
+        success: true,
         income: income,
         expense: expense,
         date: date,
