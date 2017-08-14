@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="container">
       <div class="row">
-        <h2 class="title">Realtime Chart with Vue and Pusher</h2>
+        <!-- <h2 class="title">Realtime Chart with Vue and Pusher</h2> -->
         <h3 class="subtitle">Expense and Income Tracker</h3>
         <line-chart :chart-data="datacollection"></line-chart>
       </div>
