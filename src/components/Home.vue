@@ -21,7 +21,7 @@
           </div>
           <div class="form-group">
             <label>Date</label>
-            <input class="form-control" placeholder="Date" type="date" v-model="entrydate" required>
+            <input class="form-control" placeholder="DD/MM/YYYY" type="date" v-model="entrydate" required>
           </div>
           <div class="form-group">
             <button class="btn btn-primary">Add New Entry</button>
